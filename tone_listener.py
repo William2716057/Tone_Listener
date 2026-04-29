@@ -36,8 +36,6 @@ def listen_for_tone(stream):
     else:
         consecutive = 0
 
-#listen_for_tone(stream)
-
 with sd.InputStream(SAMPLE_RATE, channels=1) as stream:
     listen_for_tone(stream)
     
